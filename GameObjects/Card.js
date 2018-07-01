@@ -2,7 +2,6 @@
 
 /**
  * Dependencies:
- * MonsterMap
  */
 function Card(img, description, values, cardID) {
 	this.image = img;
