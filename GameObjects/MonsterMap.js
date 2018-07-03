@@ -36,6 +36,18 @@ function MonsterMap(num_nodes = 52, min_edges = 1, max_edges = 7) {
 		this.nodes.push({monster: shuffed_beasts[i++], edges: []});
 	}
 
-	//generate edges I'm not sure how I want to go about this yet but I posted a stack overflow so hopefully we get some interesting ideas
-
+	//in order to ensure that all nodes are connected we will add connections
+	//as we loop through the nodes.
+	//haven't decided how we want to handle connection distributution
+	let tracking = [];
+	let cur = null;
+	for (var i in this.nodes) {
+		let prev_id = i-1;
+		cur = this.nodes[i];
+		if (prev_id >= 0) {
+			let prev = this.nodes[prev_id];
+			cur.edges.push(prev_id);
+			prev.edges.push(i);
+		}
+	}
 }
