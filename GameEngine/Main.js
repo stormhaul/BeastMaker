@@ -22,10 +22,10 @@ function Main() {
 	
 	function load() {
 		//Display the file currently being loaded
-		console.log(`loading: ${g.loadingFile}`);
+		console.log(`loading: ${h.loadingFile}`);
 
 		//Display the percentage of files currently loaded
-		console.log(`progress: ${g.loadingProgress}`);
+		console.log(`progress: ${h.loadingProgress}`);
 	}
 	
 	function setup() {
