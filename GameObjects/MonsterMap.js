@@ -20,7 +20,7 @@ function MonsterMap(num_nodes = 52, min_edges = 1, max_edges = 7) {
 	this.shuffle = function(a) {
 	    var j, x, i;
 	    for (i = a.length - 1; i > 0; i--) {
-	        j = Math.floor(Math.random() * (i + 1));
+        	j = Math.floor(Math.random() * (i + 1));
 	        x = a[i];
 	        a[i] = a[j];
 	        a[j] = x;
@@ -39,7 +39,6 @@ function MonsterMap(num_nodes = 52, min_edges = 1, max_edges = 7) {
 	//in order to ensure that all nodes are connected we will add connections
 	//as we loop through the nodes.
 	//haven't decided how we want to handle connection distributution
-	let tracking = [];
 	let cur = null;
 	for (var i in this.nodes) {
 		let prev_id = i-1;
