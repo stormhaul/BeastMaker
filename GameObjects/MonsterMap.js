@@ -46,7 +46,7 @@ function MonsterMap(num_nodes = 52, min_edges = 1, max_edges = 7) {
 		if (prev_id >= 0) {
 			let prev = this.nodes[prev_id];
 			cur.edges.push(prev_id);
-			prev.edges.push(i);
+			prev.edges.push(parseInt(i));
 		}
 	}
 }
