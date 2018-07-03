@@ -22,8 +22,38 @@ function Beastiary(file_path = null){
 			},
 			{
 				"name": "Verpine Soldier",
-				"img": " nope.jpg",
+				"img": "nope.jpg",
 				"description": "This insect will keep fighting even after being dismembered. Nothing short of death will stop it from defending it's home from invaders. It strong for its size but primarily relies on swarming to kill it's foes."
+			},
+			{
+				"name": "Test Creature 3",
+				"img": "test3.jpg",
+				"description": "description"
+			},
+			{
+				"name": "Test Creature 4",
+				"img": "test4.jpg",
+				"description": "description"
+			},
+			{
+				"name": "Test Creature 5",
+				"img": "test5.jpg",
+				"description": "description"
+			},
+			{
+				"name": "Test Creature 6",
+				"img": "test6.jpg",
+				"description": "description"
+			},
+			{
+				"name": "Test Creature 7",
+				"img": "test7.jpg",
+				"description": "description"
+			},
+			{
+				"name": "Test Creature 8",
+				"img": "test8.jpg",
+				"description": "description"
 			}
 		]
 
