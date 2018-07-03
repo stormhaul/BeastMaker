@@ -11,7 +11,7 @@
  * transformation paths exist, I will probably add graph information like min and max edges
  * or other parameters to affect the construction
  */
-function MonsterMap(num_nodes = 52, min_edges = 1, max_edges = 7) {
+function MonsterMap(num_nodes = 49, min_edges = 1, max_edges = 7) {
 	this.nodes = [];
 
 	this.beastiary = new Beastiary();
@@ -38,7 +38,6 @@ function MonsterMap(num_nodes = 52, min_edges = 1, max_edges = 7) {
 
 	//in order to ensure that all nodes are connected we will add connections
 	//as we loop through the nodes.
-	//haven't decided how we want to handle connection distributution
 	let cur = null;
 	for (i in this.nodes) {
 		let prev_id = i-1;
@@ -49,4 +48,9 @@ function MonsterMap(num_nodes = 52, min_edges = 1, max_edges = 7) {
 			prev.edges.push(parseInt(i));
 		}
 	}
+	//add last and first nodes to each other
+	cur.edges.push(0);
+	this.nodes[0].push(parseInt(i));
+	
+	//haven't decided how we want to handle connection distributution
 }
