@@ -14,5 +14,18 @@ function Beastiary(file_path = null){
 		//load file's beastiary
 	} else {
 		//load default beastiary
+		this.monsters = [
+			{
+				"name": "Demon Toad",
+				"img": " http://2.bp.blogspot.com/_ecEE8kNDzl0/S7Ykikh_s8I/AAAAAAAAALc/88QU7UgoFYw/s1600/Demon_Toad.jpg",
+				"description": "This toad is much larger than a normal man with extremely thick skin and a ghastly appearance. To kill it's enemies it can either gobble them whole and let it's acidic interior melt them slowly, or leap high into the air to land on them and crush them."
+			},
+			{
+				"name": "Verpine Soldier",
+				"img": " nope.jpg",
+				"description": "This insect will keep fighting even after being dismembered. Nothing short of death will stop it from defending it's home from invaders. It strong for its size but primarily relies on swarming to kill it's foes."
+			}
+		]
+
 	}
 }
