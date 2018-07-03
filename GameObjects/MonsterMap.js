@@ -40,7 +40,7 @@ function MonsterMap(num_nodes = 52, min_edges = 1, max_edges = 7) {
 	//as we loop through the nodes.
 	//haven't decided how we want to handle connection distributution
 	let cur = null;
-	for (var i in this.nodes) {
+	for (i in this.nodes) {
 		let prev_id = i-1;
 		cur = this.nodes[i];
 		if (prev_id >= 0) {
