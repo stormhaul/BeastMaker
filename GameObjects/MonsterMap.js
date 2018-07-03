@@ -50,7 +50,7 @@ function MonsterMap(num_nodes = 49, min_edges = 1, max_edges = 7) {
 	}
 	//add last and first nodes to each other
 	cur.edges.push(0);
-	this.nodes[0].push(parseInt(i));
+	this.nodes[0].edges.push(parseInt(i));
 	
 	//haven't decided how we want to handle connection distributution
 }
