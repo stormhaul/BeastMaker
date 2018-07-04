@@ -56,6 +56,9 @@ function Beastiary(file_path = null){
 				"description": "description"
 			}
 		]
+		for (var i = 9; i < 50; i++) {
+			this.monsters.push({name: "test creature " + i, img: "test"+i+".jpg", description: "description"});
+		}
 
 	}
 }
