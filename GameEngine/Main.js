@@ -16,7 +16,7 @@ function Main() {
 	}
 	thingsToLoad.push('assets/stage_placeholder.png');
 
-	let h = hexi(512, 512, setup, thingsToLoad, load);
+	let h = hexi(1080, 1080, setup, thingsToLoad, load);
 	h.fps = 30;
 	h.scaleToWindow();
 	h.start();
